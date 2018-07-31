@@ -8,7 +8,7 @@ die_2 = Die(10)
 # Make some rolls and store the result in a list.
 results = []
 
-for rol_num in range(5000):
+for rol_num in range(100):
     result = die_1.roll() + die_2.roll()
     results.append(result)
 
@@ -32,4 +32,4 @@ hist.x_title = "Result"
 hist.y_title = "Frequency of result."
 
 hist.add("D6 + D10", frequencies)
-hist.render_to_file("dice6+10_visual.svg")
+hist.render_to_file("dice6+10_visual2.svg")
